@@ -1,6 +1,9 @@
+Only in linux-3.10.63-klnk: .config
+Only in linux-3.10.63-klnk: .version
+Only in linux-3.10.63-klnk: Module.symvers
 diff -rc linux-3.10.63/arch/x86/include/asm/pgtable.h linux-3.10.63-klnk/arch/x86/include/asm/pgtable.h
-*** linux-3.10.63/arch/x86/include/asm/pgtable.h	2014-12-17 01:09:56.000000000 +0800
---- linux-3.10.63-klnk/arch/x86/include/asm/pgtable.h	2019-01-15 23:45:51.744593455 +0800
+*** linux-3.10.63/arch/x86/include/asm/pgtable.h	Wed Dec 17 01:09:56 2014
+--- linux-3.10.63-klnk/arch/x86/include/asm/pgtable.h	Thu Jul  4 10:56:36 2019
 ***************
 *** 132,137 ****
 --- 132,144 ----
@@ -39,8 +42,8 @@ diff -rc linux-3.10.63/arch/x86/include/asm/pgtable.h linux-3.10.63-klnk/arch/x8
   {
   	pmdval_t v = native_pmd_val(pmd);
 diff -rc linux-3.10.63/arch/x86/include/asm/pgtable_types.h linux-3.10.63-klnk/arch/x86/include/asm/pgtable_types.h
-*** linux-3.10.63/arch/x86/include/asm/pgtable_types.h	2014-12-17 01:09:56.000000000 +0800
---- linux-3.10.63-klnk/arch/x86/include/asm/pgtable_types.h	2019-01-15 23:45:51.748593435 +0800
+*** linux-3.10.63/arch/x86/include/asm/pgtable_types.h	Wed Dec 17 01:09:56 2014
+--- linux-3.10.63-klnk/arch/x86/include/asm/pgtable_types.h	Thu Jul  4 10:56:36 2019
 ***************
 *** 23,28 ****
 --- 23,31 ----
@@ -67,8 +70,8 @@ diff -rc linux-3.10.63/arch/x86/include/asm/pgtable_types.h linux-3.10.63-klnk/a
   #ifdef CONFIG_KMEMCHECK
 Only in linux-3.10.63-klnk/arch/x86/include: generated
 diff -rc linux-3.10.63/arch/x86/syscalls/syscall_32.tbl linux-3.10.63-klnk/arch/x86/syscalls/syscall_32.tbl
-*** linux-3.10.63/arch/x86/syscalls/syscall_32.tbl	2014-12-17 01:09:56.000000000 +0800
---- linux-3.10.63-klnk/arch/x86/syscalls/syscall_32.tbl	2019-01-15 23:45:51.756593395 +0800
+*** linux-3.10.63/arch/x86/syscalls/syscall_32.tbl	Wed Dec 17 01:09:56 2014
+--- linux-3.10.63-klnk/arch/x86/syscalls/syscall_32.tbl	Thu Jul  4 10:56:36 2019
 ***************
 *** 357,359 ****
 --- 357,362 ----
@@ -78,11 +81,10 @@ diff -rc linux-3.10.63/arch/x86/syscalls/syscall_32.tbl linux-3.10.63-klnk/arch/
 + 351	i386	shm_rdprotect	sys_shm_rdprotect
 + 352	i386	shm_wrprotect	sys_shm_wrprotect
 + 353	i386	shm_present		sys_shm_present
-Only in linux-3.10.63-klnk: .config
 Only in linux-3.10.63-klnk: extra_certificates
 diff -rc linux-3.10.63/fs/namei.c linux-3.10.63-klnk/fs/namei.c
-*** linux-3.10.63/fs/namei.c	2014-12-17 01:09:56.000000000 +0800
---- linux-3.10.63-klnk/fs/namei.c	2019-01-15 23:45:51.756593395 +0800
+*** linux-3.10.63/fs/namei.c	Wed Dec 17 01:09:56 2014
+--- linux-3.10.63-klnk/fs/namei.c	Thu Jul  4 10:56:36 2019
 ***************
 *** 40,45 ****
 --- 40,49 ----
@@ -136,8 +138,8 @@ Only in linux-3.10.63-klnk/include: config
 Only in linux-3.10.63-klnk/include: generated
 Only in linux-3.10.63-klnk/include/linux: klnk.h
 diff -rc linux-3.10.63/include/linux/mm.h linux-3.10.63-klnk/include/linux/mm.h
-*** linux-3.10.63/include/linux/mm.h	2014-12-17 01:09:56.000000000 +0800
---- linux-3.10.63-klnk/include/linux/mm.h	2019-01-15 23:45:51.768593335 +0800
+*** linux-3.10.63/include/linux/mm.h	Wed Dec 17 01:09:56 2014
+--- linux-3.10.63-klnk/include/linux/mm.h	Thu Jul  4 10:56:36 2019
 ***************
 *** 895,900 ****
 --- 895,903 ----
@@ -151,8 +153,8 @@ diff -rc linux-3.10.63/include/linux/mm.h linux-3.10.63-klnk/include/linux/mm.h
   #define VM_FAULT_HWPOISON_LARGE_MASK 0xf000 /* encodes hpage index for large hwpoison */
   
 diff -rc linux-3.10.63/include/linux/sched.h linux-3.10.63-klnk/include/linux/sched.h
-*** linux-3.10.63/include/linux/sched.h	2014-12-17 01:09:56.000000000 +0800
---- linux-3.10.63-klnk/include/linux/sched.h	2019-01-15 23:45:51.768593335 +0800
+*** linux-3.10.63/include/linux/sched.h	Wed Dec 17 01:09:56 2014
+--- linux-3.10.63-klnk/include/linux/sched.h	Thu Jul  4 10:56:36 2019
 ***************
 *** 1131,1137 ****
   
@@ -174,8 +176,8 @@ diff -rc linux-3.10.63/include/linux/sched.h linux-3.10.63-klnk/include/linux/sc
   	/* Canary value for the -fstack-protector gcc feature */
   	unsigned long stack_canary;
 diff -rc linux-3.10.63/include/linux/shm.h linux-3.10.63-klnk/include/linux/shm.h
-*** linux-3.10.63/include/linux/shm.h	2014-12-17 01:09:56.000000000 +0800
---- linux-3.10.63-klnk/include/linux/shm.h	2019-01-15 23:45:51.768593335 +0800
+*** linux-3.10.63/include/linux/shm.h	Wed Dec 17 01:09:56 2014
+--- linux-3.10.63-klnk/include/linux/shm.h	Thu Jul  4 10:56:36 2019
 ***************
 *** 29,34 ****
 --- 29,38 ----
@@ -190,8 +192,8 @@ diff -rc linux-3.10.63/include/linux/shm.h linux-3.10.63-klnk/include/linux/shm.
   
   /*
 diff -rc linux-3.10.63/include/linux/syscalls.h linux-3.10.63-klnk/include/linux/syscalls.h
-*** linux-3.10.63/include/linux/syscalls.h	2014-12-17 01:09:56.000000000 +0800
---- linux-3.10.63-klnk/include/linux/syscalls.h	2019-01-15 23:45:51.776593295 +0800
+*** linux-3.10.63/include/linux/syscalls.h	Wed Dec 17 01:09:56 2014
+--- linux-3.10.63-klnk/include/linux/syscalls.h	Thu Jul  4 10:56:36 2019
 ***************
 *** 846,849 ****
 --- 846,855 ----
@@ -207,8 +209,8 @@ diff -rc linux-3.10.63/include/linux/syscalls.h linux-3.10.63-klnk/include/linux
   #endif
 Only in linux-3.10.63-klnk/include/linux: vres.h
 diff -rc linux-3.10.63/include/uapi/linux/sem.h linux-3.10.63-klnk/include/uapi/linux/sem.h
-*** linux-3.10.63/include/uapi/linux/sem.h	2014-12-17 01:09:56.000000000 +0800
---- linux-3.10.63-klnk/include/uapi/linux/sem.h	2019-01-15 23:45:51.776593295 +0800
+*** linux-3.10.63/include/uapi/linux/sem.h	Wed Dec 17 01:09:56 2014
+--- linux-3.10.63-klnk/include/uapi/linux/sem.h	Thu Jul  4 10:56:36 2019
 ***************
 *** 18,23 ****
 --- 18,26 ----
@@ -222,8 +224,8 @@ diff -rc linux-3.10.63/include/uapi/linux/sem.h linux-3.10.63-klnk/include/uapi/
   /* Obsolete, used only for backwards compatibility and libc5 compiles */
   struct semid_ds {
 diff -rc linux-3.10.63/init/Kconfig linux-3.10.63-klnk/init/Kconfig
-*** linux-3.10.63/init/Kconfig	2014-12-17 01:09:56.000000000 +0800
---- linux-3.10.63-klnk/init/Kconfig	2019-01-15 23:45:51.780593275 +0800
+*** linux-3.10.63/init/Kconfig	Wed Dec 17 01:09:56 2014
+--- linux-3.10.63-klnk/init/Kconfig	Thu Jul  4 10:56:36 2019
 ***************
 *** 27,32 ****
 --- 27,37 ----
@@ -239,8 +241,8 @@ diff -rc linux-3.10.63/init/Kconfig linux-3.10.63-klnk/init/Kconfig
   config BROKEN
   	bool
 diff -rc linux-3.10.63/ipc/msg.c linux-3.10.63-klnk/ipc/msg.c
-*** linux-3.10.63/ipc/msg.c	2014-12-17 01:09:56.000000000 +0800
---- linux-3.10.63-klnk/ipc/msg.c	2019-01-15 23:45:51.780593275 +0800
+*** linux-3.10.63/ipc/msg.c	Wed Dec 17 01:09:56 2014
+--- linux-3.10.63-klnk/ipc/msg.c	Thu Jul  4 10:56:36 2019
 ***************
 *** 42,47 ****
 --- 42,51 ----
@@ -592,8 +594,8 @@ diff -rc linux-3.10.63/ipc/msg.c linux-3.10.63-klnk/ipc/msg.c
   
   #ifdef CONFIG_PROC_FS
 diff -rc linux-3.10.63/ipc/sem.c linux-3.10.63-klnk/ipc/sem.c
-*** linux-3.10.63/ipc/sem.c	2014-12-17 01:09:56.000000000 +0800
---- linux-3.10.63-klnk/ipc/sem.c	2019-01-15 23:45:51.828593035 +0800
+*** linux-3.10.63/ipc/sem.c	Wed Dec 17 01:09:56 2014
+--- linux-3.10.63-klnk/ipc/sem.c	Thu Jul  4 10:56:36 2019
 ***************
 *** 90,95 ****
 --- 90,99 ----
@@ -1101,8 +1103,8 @@ diff -rc linux-3.10.63/ipc/sem.c linux-3.10.63-klnk/ipc/sem.c
   static int sysvipc_sem_proc_show(struct seq_file *s, void *it)
   {
 diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
-*** linux-3.10.63/ipc/shm.c	2014-12-17 01:09:56.000000000 +0800
---- linux-3.10.63-klnk/ipc/shm.c	2019-01-29 12:25:07.693132920 +0800
+*** linux-3.10.63/ipc/shm.c	Wed Dec 17 01:09:56 2014
+--- linux-3.10.63-klnk/ipc/shm.c	Fri Jul  5 12:14:09 2019
 ***************
 *** 47,53 ****
 --- 47,66 ----
@@ -1272,7 +1274,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   }
   
   #ifdef CONFIG_NUMA
---- 480,756 ----
+--- 480,764 ----
   	up_write(&shm_ids(ns).rwsem);
   }
   
@@ -1355,7 +1357,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
 + 			pte_t pte = *ptep;
 + 			
 + 			if (pte_present(pte))
-+ 				ret = (flg & VRES_RDWR) ? pte_write(pte) : 1;
++ 				ret = (flg & VRES_RDWR) ? (pte_write(pte) && pte_dirty(pte)) : 1;
 + 			klnk_put_pte(ptep, ptl);
 + 			if (ret)
 + 				break;
@@ -1378,8 +1380,11 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
 + 		
 + 		if (pte_present(pte) && pte_write(pte)) {
 + 			flush_cache_page(vma, address, pte_pfn(pte));
-+ 			ptep_set_access_flags(vma, address, ptep, pte_wrprotect(pte), 1);
-+ 			update_mmu_cache(vma, address, ptep);
++ 			//ptep_set_access_flags(vma, address, ptep, pte_wrprotect(pte), 1);
++ 			//update_mmu_cache(vma, address, ptep);
++ 			pte = pte_wrprotect(pte);
++ 			set_pte_at(vma->vm_mm, address, ptep, pte);
++ 			flush_tlb_page(vma, address);
 + 		}
 + 		klnk_put_pte(ptep, ptl);
 + 	}
@@ -1425,18 +1430,23 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
 + 	ptep = klnk_get_pte(mm, address, &ptl);
 + 	if (ptep) {
 + 		pte_t pte = *ptep;
++ 		bool invl = false;
++ 
 + 		if (pte_present(pte)) {
-+ 			//struct page *page = pte_page(pte);
++ 			struct page *page = pte_page(pte);
 + 			
-+ 			flush_cache_page(vma, address, pte_pfn(pte));
++ 			//flush_cache_page(vma, address, pte_pfn(pte));
 + 			pte = ptep_clear_flush(vma, address, ptep);
-+ 			//if (pte_dirty(pte))
-+ 			//	set_page_dirty(page);
++ 			if (pte_dirty(pte))
++ 				set_page_dirty(page);
++ 			//dec_mm_counter(mm, MM_FILEPAGES);
 + 			//page_remove_rmap(page);
 + 			//page_cache_release(page);
-+ 			//dec_mm_counter(mm, MM_FILEPAGES);
++ 			invl = true;
 + 		}
 + 		klnk_put_pte(ptep, ptl);
++ 		if (invl)
++ 			mmu_notifier_invalidate_page(mm, address);
 + 	}
 + 	spin_unlock(&mm->page_table_lock);
 + }
@@ -1552,7 +1562,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   #ifdef CONFIG_NUMA
 ***************
 *** 464,469 ****
---- 865,873 ----
+--- 873,881 ----
   	.open	= shm_open,	/* callback for a new vm-area open */
   	.close	= shm_close,	/* callback for when the vm-area is released */
   	.fault	= shm_fault,
@@ -1571,7 +1581,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   {
   	struct ipc_namespace *ns;
   	struct ipc_ops shm_ops;
---- 1011,1017 ----
+--- 1019,1025 ----
   	return 0;
   }
   
@@ -1581,7 +1591,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   	struct ipc_ops shm_ops;
 ***************
 *** 626,631 ****
---- 1030,1070 ----
+--- 1038,1078 ----
   	return ipcget(ns, &shm_ids(ns), &shm_ops, &shm_params);
   }
   
@@ -1632,7 +1642,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   {
   	struct shmid_kernel *shp;
   	int err, version;
---- 1375,1381 ----
+--- 1383,1389 ----
   	return err;
   }
   
@@ -1642,7 +1652,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   	int err, version;
 ***************
 *** 1034,1039 ****
---- 1473,1649 ----
+--- 1481,1657 ----
   	return err;
   }
   
@@ -1829,7 +1839,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   	err = -EINVAL;
   	if (shmid < 0)
   		goto out;
---- 1667,1683 ----
+--- 1675,1691 ----
   	struct path path;
   	fmode_t f_mode;
   	unsigned long populate = 0;
@@ -1856,7 +1866,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   	err = security_mmap_file(file, prot, flags);
   	if (err)
   		goto out_fput;
---- 1773,1781 ----
+--- 1781,1789 ----
   	sfd->ns = get_ipc_ns(ns);
   	sfd->file = shp->shm_file;
   	sfd->vm_ops = NULL;
@@ -1876,7 +1886,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   			size = file_inode(vma->vm_file)->i_size;
   			do_munmap(mm, vma->vm_start, vma->vm_end - vma->vm_start);
   			/*
---- 1890,1899 ----
+--- 1898,1907 ----
   		 */
   		if ((vma->vm_ops == &shm_vm_ops) &&
   			(vma->vm_start - addr)/PAGE_SIZE == vma->vm_pgoff) {
@@ -1898,7 +1908,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   		vma = next;
   	}
   
---- 1920,1932 ----
+--- 1928,1940 ----
   
   		/* finding a matching vma now does not alter retval */
   		if ((vma->vm_ops == &shm_vm_ops) &&
@@ -1914,7 +1924,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   
 ***************
 *** 1306,1311 ****
---- 1934,1943 ----
+--- 1942,1951 ----
   	/* under NOMMU conditions, the exact address to be destroyed must be
   	 * given */
   	if (vma && vma->vm_start == addr && vma->vm_ops == &shm_vm_ops) {
@@ -1926,8 +1936,8 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   		retval = 0;
   	}
 diff -rc linux-3.10.63/ipc/util.c linux-3.10.63-klnk/ipc/util.c
-*** linux-3.10.63/ipc/util.c	2014-12-17 01:09:56.000000000 +0800
---- linux-3.10.63-klnk/ipc/util.c	2019-01-15 23:45:51.836592995 +0800
+*** linux-3.10.63/ipc/util.c	Wed Dec 17 01:09:56 2014
+--- linux-3.10.63-klnk/ipc/util.c	Thu Jul  4 10:56:36 2019
 ***************
 *** 202,209 ****
    *	if not.
@@ -1950,8 +1960,8 @@ diff -rc linux-3.10.63/ipc/util.c linux-3.10.63-klnk/ipc/util.c
   	struct kern_ipc_perm *ipc;
   	int next_id;
 diff -rc linux-3.10.63/ipc/util.h linux-3.10.63-klnk/ipc/util.h
-*** linux-3.10.63/ipc/util.h	2014-12-17 01:09:56.000000000 +0800
---- linux-3.10.63-klnk/ipc/util.h	2019-01-15 23:45:51.836592995 +0800
+*** linux-3.10.63/ipc/util.h	Wed Dec 17 01:09:56 2014
+--- linux-3.10.63-klnk/ipc/util.h	Thu Jul  4 10:56:36 2019
 ***************
 *** 15,20 ****
 --- 15,24 ----
@@ -1966,8 +1976,8 @@ diff -rc linux-3.10.63/ipc/util.h linux-3.10.63-klnk/ipc/util.h
   void msg_init (void);
   void shm_init (void);
 diff -rc linux-3.10.63/kernel/exit.c linux-3.10.63-klnk/kernel/exit.c
-*** linux-3.10.63/kernel/exit.c	2014-12-17 01:09:56.000000000 +0800
---- linux-3.10.63-klnk/kernel/exit.c	2019-01-28 18:12:25.318544938 +0800
+*** linux-3.10.63/kernel/exit.c	Wed Dec 17 01:09:56 2014
+--- linux-3.10.63-klnk/kernel/exit.c	Thu Jul  4 10:56:36 2019
 ***************
 *** 59,64 ****
 --- 59,68 ----
@@ -2012,8 +2022,8 @@ diff -rc linux-3.10.63/kernel/exit.c linux-3.10.63-klnk/kernel/exit.c
   
   	WARN_ON(blk_needs_flush_plug(tsk));
 diff -rc linux-3.10.63/kernel/fork.c linux-3.10.63-klnk/kernel/fork.c
-*** linux-3.10.63/kernel/fork.c	2014-12-17 01:09:56.000000000 +0800
---- linux-3.10.63-klnk/kernel/fork.c	2019-01-15 23:45:51.836592995 +0800
+*** linux-3.10.63/kernel/fork.c	Wed Dec 17 01:09:56 2014
+--- linux-3.10.63-klnk/kernel/fork.c	Thu Jul  4 10:56:36 2019
 ***************
 *** 84,89 ****
 --- 84,93 ----
@@ -2090,8 +2100,8 @@ diff -rc linux-3.10.63/kernel/fork.c linux-3.10.63-klnk/kernel/fork.c
   
   		pid = get_task_pid(p, PIDTYPE_PID);
 diff -rc linux-3.10.63/mm/memory.c linux-3.10.63-klnk/mm/memory.c
-*** linux-3.10.63/mm/memory.c	2014-12-17 01:09:56.000000000 +0800
---- linux-3.10.63-klnk/mm/memory.c	2019-01-15 23:45:51.860592875 +0800
+*** linux-3.10.63/mm/memory.c	Wed Dec 17 01:09:56 2014
+--- linux-3.10.63-klnk/mm/memory.c	Thu Jul  4 10:56:36 2019
 ***************
 *** 69,74 ****
 --- 69,78 ----
@@ -2232,8 +2242,8 @@ diff -rc linux-3.10.63/mm/memory.c linux-3.10.63-klnk/mm/memory.c
   
   		/* no need to invalidate: a not-present page won't be cached */
 diff -rc linux-3.10.63/mm/mmap.c linux-3.10.63-klnk/mm/mmap.c
-*** linux-3.10.63/mm/mmap.c	2014-12-17 01:09:56.000000000 +0800
---- linux-3.10.63-klnk/mm/mmap.c	2019-01-15 23:45:51.864592855 +0800
+*** linux-3.10.63/mm/mmap.c	Wed Dec 17 01:09:56 2014
+--- linux-3.10.63-klnk/mm/mmap.c	Thu Jul  4 10:56:36 2019
 ***************
 *** 44,49 ****
 --- 44,53 ----
@@ -2299,8 +2309,8 @@ diff -rc linux-3.10.63/mm/mmap.c linux-3.10.63-klnk/mm/mmap.c
   	error = security_mmap_addr(address);
   	if (error)
 diff -rc linux-3.10.63/mm/mremap.c linux-3.10.63-klnk/mm/mremap.c
-*** linux-3.10.63/mm/mremap.c	2014-12-17 01:09:56.000000000 +0800
---- linux-3.10.63-klnk/mm/mremap.c	2019-01-15 23:45:51.864592855 +0800
+*** linux-3.10.63/mm/mremap.c	Wed Dec 17 01:09:56 2014
+--- linux-3.10.63-klnk/mm/mremap.c	Thu Jul  4 10:56:36 2019
 ***************
 *** 27,32 ****
 --- 27,36 ----
@@ -2331,7 +2341,6 @@ diff -rc linux-3.10.63/mm/mremap.c linux-3.10.63-klnk/mm/mremap.c
   	/*
   	 * Advise KSM to break any KSM pages in the area to be moved:
   	 * it would be confusing if they were to turn up at the new
-Only in linux-3.10.63-klnk: Module.symvers
 Only in linux-3.10.63-klnk/scripts: asn1_compiler
 Only in linux-3.10.63-klnk/scripts/basic: fixdep
 Only in linux-3.10.63-klnk/scripts: conmakehash
@@ -2357,5 +2366,4 @@ Only in linux-3.10.63-klnk/security/tomoyo: builtin-policy.h
 Only in linux-3.10.63-klnk/security/tomoyo: policy
 Only in linux-3.10.63-klnk: signing_key.priv
 Only in linux-3.10.63-klnk: signing_key.x509
-Only in linux-3.10.63-klnk: .version
 Only in linux-3.10.63-klnk: x509.genkey

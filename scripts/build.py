@@ -8,6 +8,7 @@ import platform
 from subprocess import check_output, call
 
 DEVNULL = open(os.devnull, 'wb')
+CLEAR = False
 
 _defs = {}
 
@@ -94,16 +95,16 @@ def _include():
 def _download():
     url = _get_url()
     name = os.path.join(_defs['path_source'], 'linux-%s.tar.gz' % _defs['kernel_version'])
-    if os.path.exists(name):
-        os.remove(name)
-    wget.download(url, name)
+    if not os.path.exists(name):
+        wget.download(url, name)
     path = _get_path()
     if os.path.exists(path):
         shutil.rmtree(path)
     tar = tarfile.open(name)
     tar.extractall(_defs['path_source'])
     tar.close()
-    os.remove(name)
+    if CLEAR:
+        os.remove(name)
 
 def _patch():
     _download()
