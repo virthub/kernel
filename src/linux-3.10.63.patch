@@ -3,7 +3,7 @@ Only in linux-3.10.63-klnk: .version
 Only in linux-3.10.63-klnk: Module.symvers
 diff -rc linux-3.10.63/arch/x86/include/asm/pgtable.h linux-3.10.63-klnk/arch/x86/include/asm/pgtable.h
 *** linux-3.10.63/arch/x86/include/asm/pgtable.h	Wed Dec 17 01:09:56 2014
---- linux-3.10.63-klnk/arch/x86/include/asm/pgtable.h	Thu Jul  4 10:56:36 2019
+--- linux-3.10.63-klnk/arch/x86/include/asm/pgtable.h	Mon Jul 15 21:28:14 2019
 ***************
 *** 132,137 ****
 --- 132,144 ----
@@ -43,7 +43,7 @@ diff -rc linux-3.10.63/arch/x86/include/asm/pgtable.h linux-3.10.63-klnk/arch/x8
   	pmdval_t v = native_pmd_val(pmd);
 diff -rc linux-3.10.63/arch/x86/include/asm/pgtable_types.h linux-3.10.63-klnk/arch/x86/include/asm/pgtable_types.h
 *** linux-3.10.63/arch/x86/include/asm/pgtable_types.h	Wed Dec 17 01:09:56 2014
---- linux-3.10.63-klnk/arch/x86/include/asm/pgtable_types.h	Thu Jul  4 10:56:36 2019
+--- linux-3.10.63-klnk/arch/x86/include/asm/pgtable_types.h	Mon Jul 15 21:28:14 2019
 ***************
 *** 23,28 ****
 --- 23,31 ----
@@ -71,7 +71,7 @@ diff -rc linux-3.10.63/arch/x86/include/asm/pgtable_types.h linux-3.10.63-klnk/a
 Only in linux-3.10.63-klnk/arch/x86/include: generated
 diff -rc linux-3.10.63/arch/x86/syscalls/syscall_32.tbl linux-3.10.63-klnk/arch/x86/syscalls/syscall_32.tbl
 *** linux-3.10.63/arch/x86/syscalls/syscall_32.tbl	Wed Dec 17 01:09:56 2014
---- linux-3.10.63-klnk/arch/x86/syscalls/syscall_32.tbl	Thu Jul  4 10:56:36 2019
+--- linux-3.10.63-klnk/arch/x86/syscalls/syscall_32.tbl	Mon Jul 15 21:28:14 2019
 ***************
 *** 357,359 ****
 --- 357,362 ----
@@ -84,7 +84,7 @@ diff -rc linux-3.10.63/arch/x86/syscalls/syscall_32.tbl linux-3.10.63-klnk/arch/
 Only in linux-3.10.63-klnk: extra_certificates
 diff -rc linux-3.10.63/fs/namei.c linux-3.10.63-klnk/fs/namei.c
 *** linux-3.10.63/fs/namei.c	Wed Dec 17 01:09:56 2014
---- linux-3.10.63-klnk/fs/namei.c	Thu Jul  4 10:56:36 2019
+--- linux-3.10.63-klnk/fs/namei.c	Mon Jul 15 21:28:14 2019
 ***************
 *** 40,45 ****
 --- 40,49 ----
@@ -139,7 +139,7 @@ Only in linux-3.10.63-klnk/include: generated
 Only in linux-3.10.63-klnk/include/linux: klnk.h
 diff -rc linux-3.10.63/include/linux/mm.h linux-3.10.63-klnk/include/linux/mm.h
 *** linux-3.10.63/include/linux/mm.h	Wed Dec 17 01:09:56 2014
---- linux-3.10.63-klnk/include/linux/mm.h	Thu Jul  4 10:56:36 2019
+--- linux-3.10.63-klnk/include/linux/mm.h	Mon Jul 15 21:28:14 2019
 ***************
 *** 895,900 ****
 --- 895,903 ----
@@ -154,7 +154,7 @@ diff -rc linux-3.10.63/include/linux/mm.h linux-3.10.63-klnk/include/linux/mm.h
   
 diff -rc linux-3.10.63/include/linux/sched.h linux-3.10.63-klnk/include/linux/sched.h
 *** linux-3.10.63/include/linux/sched.h	Wed Dec 17 01:09:56 2014
---- linux-3.10.63-klnk/include/linux/sched.h	Thu Jul  4 10:56:36 2019
+--- linux-3.10.63-klnk/include/linux/sched.h	Mon Jul 15 21:28:14 2019
 ***************
 *** 1131,1137 ****
   
@@ -177,7 +177,7 @@ diff -rc linux-3.10.63/include/linux/sched.h linux-3.10.63-klnk/include/linux/sc
   	unsigned long stack_canary;
 diff -rc linux-3.10.63/include/linux/shm.h linux-3.10.63-klnk/include/linux/shm.h
 *** linux-3.10.63/include/linux/shm.h	Wed Dec 17 01:09:56 2014
---- linux-3.10.63-klnk/include/linux/shm.h	Thu Jul  4 10:56:36 2019
+--- linux-3.10.63-klnk/include/linux/shm.h	Mon Jul 15 21:28:14 2019
 ***************
 *** 29,34 ****
 --- 29,38 ----
@@ -193,7 +193,7 @@ diff -rc linux-3.10.63/include/linux/shm.h linux-3.10.63-klnk/include/linux/shm.
   /*
 diff -rc linux-3.10.63/include/linux/syscalls.h linux-3.10.63-klnk/include/linux/syscalls.h
 *** linux-3.10.63/include/linux/syscalls.h	Wed Dec 17 01:09:56 2014
---- linux-3.10.63-klnk/include/linux/syscalls.h	Thu Jul  4 10:56:36 2019
+--- linux-3.10.63-klnk/include/linux/syscalls.h	Mon Jul 15 21:28:14 2019
 ***************
 *** 846,849 ****
 --- 846,855 ----
@@ -210,7 +210,7 @@ diff -rc linux-3.10.63/include/linux/syscalls.h linux-3.10.63-klnk/include/linux
 Only in linux-3.10.63-klnk/include/linux: vres.h
 diff -rc linux-3.10.63/include/uapi/linux/sem.h linux-3.10.63-klnk/include/uapi/linux/sem.h
 *** linux-3.10.63/include/uapi/linux/sem.h	Wed Dec 17 01:09:56 2014
---- linux-3.10.63-klnk/include/uapi/linux/sem.h	Thu Jul  4 10:56:36 2019
+--- linux-3.10.63-klnk/include/uapi/linux/sem.h	Mon Jul 15 21:28:14 2019
 ***************
 *** 18,23 ****
 --- 18,26 ----
@@ -225,7 +225,7 @@ diff -rc linux-3.10.63/include/uapi/linux/sem.h linux-3.10.63-klnk/include/uapi/
   struct semid_ds {
 diff -rc linux-3.10.63/init/Kconfig linux-3.10.63-klnk/init/Kconfig
 *** linux-3.10.63/init/Kconfig	Wed Dec 17 01:09:56 2014
---- linux-3.10.63-klnk/init/Kconfig	Thu Jul  4 10:56:36 2019
+--- linux-3.10.63-klnk/init/Kconfig	Mon Jul 15 21:28:14 2019
 ***************
 *** 27,32 ****
 --- 27,37 ----
@@ -242,7 +242,7 @@ diff -rc linux-3.10.63/init/Kconfig linux-3.10.63-klnk/init/Kconfig
   	bool
 diff -rc linux-3.10.63/ipc/msg.c linux-3.10.63-klnk/ipc/msg.c
 *** linux-3.10.63/ipc/msg.c	Wed Dec 17 01:09:56 2014
---- linux-3.10.63-klnk/ipc/msg.c	Thu Jul  4 10:56:36 2019
+--- linux-3.10.63-klnk/ipc/msg.c	Mon Jul 15 21:28:14 2019
 ***************
 *** 42,47 ****
 --- 42,51 ----
@@ -595,7 +595,7 @@ diff -rc linux-3.10.63/ipc/msg.c linux-3.10.63-klnk/ipc/msg.c
   #ifdef CONFIG_PROC_FS
 diff -rc linux-3.10.63/ipc/sem.c linux-3.10.63-klnk/ipc/sem.c
 *** linux-3.10.63/ipc/sem.c	Wed Dec 17 01:09:56 2014
---- linux-3.10.63-klnk/ipc/sem.c	Thu Jul  4 10:56:36 2019
+--- linux-3.10.63-klnk/ipc/sem.c	Mon Jul 15 21:28:14 2019
 ***************
 *** 90,95 ****
 --- 90,99 ----
@@ -1104,7 +1104,7 @@ diff -rc linux-3.10.63/ipc/sem.c linux-3.10.63-klnk/ipc/sem.c
   {
 diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
 *** linux-3.10.63/ipc/shm.c	Wed Dec 17 01:09:56 2014
---- linux-3.10.63-klnk/ipc/shm.c	Fri Jul  5 12:14:09 2019
+--- linux-3.10.63-klnk/ipc/shm.c	Wed Jul 24 19:11:39 2019
 ***************
 *** 47,53 ****
 --- 47,66 ----
@@ -1274,7 +1274,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   }
   
   #ifdef CONFIG_NUMA
---- 480,764 ----
+--- 480,755 ----
   	up_write(&shm_ids(ns).rwsem);
   }
   
@@ -1357,7 +1357,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
 + 			pte_t pte = *ptep;
 + 			
 + 			if (pte_present(pte))
-+ 				ret = (flg & VRES_RDWR) ? (pte_write(pte) && pte_dirty(pte)) : 1;
++ 				ret = (flg & VRES_RDWR) ? pte_write(pte) : 1;
 + 			klnk_put_pte(ptep, ptl);
 + 			if (ret)
 + 				break;
@@ -1367,10 +1367,11 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
 + 	return ret;
 + }
 + 
-+ void klnk_shm_page_wrprotect(struct vm_area_struct *vma, unsigned long address)
++ struct page * klnk_shm_page_wrprotect(struct vm_area_struct *vma, unsigned long address)
 + {
 + 	pte_t *ptep;
 + 	spinlock_t *ptl;
++ 	struct page *page = NULL;
 + 	struct mm_struct *mm = vma->vm_mm;
 + 	
 + 	spin_lock(&mm->page_table_lock);
@@ -1378,45 +1379,39 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
 + 	if (ptep) {
 + 		pte_t pte = *ptep;
 + 		
-+ 		if (pte_present(pte) && pte_write(pte)) {
++ 		if (pte_present(pte)) {
 + 			flush_cache_page(vma, address, pte_pfn(pte));
 + 			//ptep_set_access_flags(vma, address, ptep, pte_wrprotect(pte), 1);
 + 			//update_mmu_cache(vma, address, ptep);
 + 			pte = pte_wrprotect(pte);
 + 			set_pte_at(vma->vm_mm, address, ptep, pte);
 + 			flush_tlb_page(vma, address);
++ 			page = pte_page(pte);
 + 		}
 + 		klnk_put_pte(ptep, ptl);
 + 	}
 + 	spin_unlock(&mm->page_table_lock);
-+ }
-+ 
-+ void klnk_shm_do_wrprotect(struct address_space *mapping, unsigned long pgoff)
-+ {
-+ 	unsigned long addr;
-+ 	struct vm_area_struct *vma;
-+ 	
-+ 	mutex_lock(&mapping->i_mmap_mutex);
-+ 	vma_interval_tree_foreach(vma, &mapping->i_mmap, pgoff, pgoff) {
-+ 		addr = vma->vm_start + ((pgoff - vma->vm_pgoff) << PAGE_SHIFT);
-+ 		klnk_shm_page_wrprotect(vma, addr);
-+ 	}
-+ 	mutex_unlock(&mapping->i_mmap_mutex);
++ 	return page;
 + }
 + 
 + int klnk_shm_wrprotect(struct file *file, unsigned long pgoff, char __user *buf)
 + {
-+ 	struct page *page = klnk_shm_get_page(file, pgoff);
++ 	struct page *page = NULL;
++ 	struct vm_area_struct *vma;
++ 	struct address_space *mapping = file->f_mapping;
 + 	
-+ 	if (page)
-+ 		klnk_shm_do_wrprotect(file->f_mapping, pgoff);
-+ 	
-+ 	if (buf) {
-+ 		if (!page) 
-+ 			return -ENOENT;
-+ 		if (copy_to_user(buf, page_address(page), PAGE_SIZE))
-+ 			return -EFAULT;
++ 	mutex_lock(&mapping->i_mmap_mutex);
++ 	vma_interval_tree_foreach(vma, &mapping->i_mmap, pgoff, pgoff) {
++ 		struct page *ret;
++ 		unsigned long addr = vma->vm_start + ((pgoff - vma->vm_pgoff) << PAGE_SHIFT);
++ 
++ 		ret = klnk_shm_page_wrprotect(vma, addr);
++ 		if (!page)
++ 			page = ret;
 + 	}
++ 	if (buf && page)
++ 		copy_to_user(buf, page_address(page), PAGE_SIZE);
++ 	mutex_unlock(&mapping->i_mmap_mutex);
 + 	return 0;
 + }
 + 
@@ -1429,8 +1424,8 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
 + 	spin_lock(&mm->page_table_lock);
 + 	ptep = klnk_get_pte(mm, address, &ptl);
 + 	if (ptep) {
-+ 		pte_t pte = *ptep;
 + 		bool invl = false;
++ 		pte_t pte = *ptep;
 + 
 + 		if (pte_present(pte)) {
 + 			struct page *page = pte_page(pte);
@@ -1451,35 +1446,31 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
 + 	spin_unlock(&mm->page_table_lock);
 + }
 + 
-+ void klnk_shm_do_rdprotect(struct address_space *mapping, unsigned long pgoff)
++ int klnk_shm_rdprotect(struct file *file, unsigned long pgoff, char __user *buf)
 + {
-+ 	unsigned long addr;
++ 	struct page *page = NULL;
 + 	struct vm_area_struct *vma;
++ 	struct address_space *mapping = file->f_mapping;
 + 	
 + 	mutex_lock(&mapping->i_mmap_mutex);
 + 	vma_interval_tree_foreach(vma, &mapping->i_mmap, pgoff, pgoff) {
-+ 		addr = vma->vm_start + ((pgoff - vma->vm_pgoff) << PAGE_SHIFT);
++ 		struct page *ret;
++ 		unsigned long addr = vma->vm_start + ((pgoff - vma->vm_pgoff) << PAGE_SHIFT);
++ 
++ 		ret = klnk_shm_page_wrprotect(vma, addr);
++ 		if (!page)
++ 			page = ret;
++ 	}
++ 
++ 	if (buf && page)
++ 		copy_to_user(buf, page_address(page), PAGE_SIZE);
++ 
++ 	vma_interval_tree_foreach(vma, &mapping->i_mmap, pgoff, pgoff) {
++ 		unsigned long addr = vma->vm_start + ((pgoff - vma->vm_pgoff) << PAGE_SHIFT);
++ 
 + 		klnk_shm_page_rdprotect(vma, addr);
 + 	}
 + 	mutex_unlock(&mapping->i_mmap_mutex);
-+ }
-+ 
-+ int klnk_shm_rdprotect(struct file *file, unsigned long pgoff, char __user *buf)
-+ {
-+ 	struct address_space *mapping = file->f_mapping;
-+ 	struct page *page = klnk_shm_get_page(file, pgoff);
-+ 	
-+ 	if (buf) {
-+ 		if (!page)
-+ 			return -ENOENT;
-+ 		klnk_shm_do_wrprotect(mapping, pgoff);
-+ 		if (copy_to_user(buf, page_address(page), PAGE_SIZE)) {
-+ 			klnk_log("failed to perform rdprotect, pgoff=%ld", pgoff);
-+ 			return -EFAULT;
-+ 		}
-+ 	}
-+ 	if (page)
-+ 		klnk_shm_do_rdprotect(mapping, pgoff);
 + 	return 0;
 + }
 + 
@@ -1562,7 +1553,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   #ifdef CONFIG_NUMA
 ***************
 *** 464,469 ****
---- 873,881 ----
+--- 864,872 ----
   	.open	= shm_open,	/* callback for a new vm-area open */
   	.close	= shm_close,	/* callback for when the vm-area is released */
   	.fault	= shm_fault,
@@ -1581,7 +1572,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   {
   	struct ipc_namespace *ns;
   	struct ipc_ops shm_ops;
---- 1019,1025 ----
+--- 1010,1016 ----
   	return 0;
   }
   
@@ -1591,7 +1582,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   	struct ipc_ops shm_ops;
 ***************
 *** 626,631 ****
---- 1038,1078 ----
+--- 1029,1069 ----
   	return ipcget(ns, &shm_ids(ns), &shm_ops, &shm_params);
   }
   
@@ -1642,7 +1633,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   {
   	struct shmid_kernel *shp;
   	int err, version;
---- 1383,1389 ----
+--- 1374,1380 ----
   	return err;
   }
   
@@ -1652,7 +1643,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   	int err, version;
 ***************
 *** 1034,1039 ****
---- 1481,1657 ----
+--- 1472,1648 ----
   	return err;
   }
   
@@ -1839,7 +1830,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   	err = -EINVAL;
   	if (shmid < 0)
   		goto out;
---- 1675,1691 ----
+--- 1666,1682 ----
   	struct path path;
   	fmode_t f_mode;
   	unsigned long populate = 0;
@@ -1866,7 +1857,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   	err = security_mmap_file(file, prot, flags);
   	if (err)
   		goto out_fput;
---- 1781,1789 ----
+--- 1772,1780 ----
   	sfd->ns = get_ipc_ns(ns);
   	sfd->file = shp->shm_file;
   	sfd->vm_ops = NULL;
@@ -1886,7 +1877,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   			size = file_inode(vma->vm_file)->i_size;
   			do_munmap(mm, vma->vm_start, vma->vm_end - vma->vm_start);
   			/*
---- 1898,1907 ----
+--- 1889,1898 ----
   		 */
   		if ((vma->vm_ops == &shm_vm_ops) &&
   			(vma->vm_start - addr)/PAGE_SIZE == vma->vm_pgoff) {
@@ -1908,7 +1899,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   		vma = next;
   	}
   
---- 1928,1940 ----
+--- 1919,1931 ----
   
   		/* finding a matching vma now does not alter retval */
   		if ((vma->vm_ops == &shm_vm_ops) &&
@@ -1924,7 +1915,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   
 ***************
 *** 1306,1311 ****
---- 1942,1951 ----
+--- 1933,1942 ----
   	/* under NOMMU conditions, the exact address to be destroyed must be
   	 * given */
   	if (vma && vma->vm_start == addr && vma->vm_ops == &shm_vm_ops) {
@@ -1937,7 +1928,7 @@ diff -rc linux-3.10.63/ipc/shm.c linux-3.10.63-klnk/ipc/shm.c
   	}
 diff -rc linux-3.10.63/ipc/util.c linux-3.10.63-klnk/ipc/util.c
 *** linux-3.10.63/ipc/util.c	Wed Dec 17 01:09:56 2014
---- linux-3.10.63-klnk/ipc/util.c	Thu Jul  4 10:56:36 2019
+--- linux-3.10.63-klnk/ipc/util.c	Mon Jul 15 21:28:14 2019
 ***************
 *** 202,209 ****
    *	if not.
@@ -1961,7 +1952,7 @@ diff -rc linux-3.10.63/ipc/util.c linux-3.10.63-klnk/ipc/util.c
   	int next_id;
 diff -rc linux-3.10.63/ipc/util.h linux-3.10.63-klnk/ipc/util.h
 *** linux-3.10.63/ipc/util.h	Wed Dec 17 01:09:56 2014
---- linux-3.10.63-klnk/ipc/util.h	Thu Jul  4 10:56:36 2019
+--- linux-3.10.63-klnk/ipc/util.h	Mon Jul 15 21:28:14 2019
 ***************
 *** 15,20 ****
 --- 15,24 ----
@@ -1977,7 +1968,7 @@ diff -rc linux-3.10.63/ipc/util.h linux-3.10.63-klnk/ipc/util.h
   void shm_init (void);
 diff -rc linux-3.10.63/kernel/exit.c linux-3.10.63-klnk/kernel/exit.c
 *** linux-3.10.63/kernel/exit.c	Wed Dec 17 01:09:56 2014
---- linux-3.10.63-klnk/kernel/exit.c	Thu Jul  4 10:56:36 2019
+--- linux-3.10.63-klnk/kernel/exit.c	Mon Jul 15 21:28:14 2019
 ***************
 *** 59,64 ****
 --- 59,68 ----
@@ -2023,7 +2014,7 @@ diff -rc linux-3.10.63/kernel/exit.c linux-3.10.63-klnk/kernel/exit.c
   	WARN_ON(blk_needs_flush_plug(tsk));
 diff -rc linux-3.10.63/kernel/fork.c linux-3.10.63-klnk/kernel/fork.c
 *** linux-3.10.63/kernel/fork.c	Wed Dec 17 01:09:56 2014
---- linux-3.10.63-klnk/kernel/fork.c	Thu Jul  4 10:56:36 2019
+--- linux-3.10.63-klnk/kernel/fork.c	Mon Jul 15 21:28:14 2019
 ***************
 *** 84,89 ****
 --- 84,93 ----
@@ -2101,7 +2092,7 @@ diff -rc linux-3.10.63/kernel/fork.c linux-3.10.63-klnk/kernel/fork.c
   		pid = get_task_pid(p, PIDTYPE_PID);
 diff -rc linux-3.10.63/mm/memory.c linux-3.10.63-klnk/mm/memory.c
 *** linux-3.10.63/mm/memory.c	Wed Dec 17 01:09:56 2014
---- linux-3.10.63-klnk/mm/memory.c	Thu Jul  4 10:56:36 2019
+--- linux-3.10.63-klnk/mm/memory.c	Mon Jul 15 21:28:14 2019
 ***************
 *** 69,74 ****
 --- 69,78 ----
@@ -2243,7 +2234,7 @@ diff -rc linux-3.10.63/mm/memory.c linux-3.10.63-klnk/mm/memory.c
   		/* no need to invalidate: a not-present page won't be cached */
 diff -rc linux-3.10.63/mm/mmap.c linux-3.10.63-klnk/mm/mmap.c
 *** linux-3.10.63/mm/mmap.c	Wed Dec 17 01:09:56 2014
---- linux-3.10.63-klnk/mm/mmap.c	Thu Jul  4 10:56:36 2019
+--- linux-3.10.63-klnk/mm/mmap.c	Mon Jul 15 21:28:14 2019
 ***************
 *** 44,49 ****
 --- 44,53 ----
@@ -2310,7 +2301,7 @@ diff -rc linux-3.10.63/mm/mmap.c linux-3.10.63-klnk/mm/mmap.c
   	if (error)
 diff -rc linux-3.10.63/mm/mremap.c linux-3.10.63-klnk/mm/mremap.c
 *** linux-3.10.63/mm/mremap.c	Wed Dec 17 01:09:56 2014
---- linux-3.10.63-klnk/mm/mremap.c	Thu Jul  4 10:56:36 2019
+--- linux-3.10.63-klnk/mm/mremap.c	Mon Jul 15 21:28:14 2019
 ***************
 *** 27,32 ****
 --- 27,36 ----
